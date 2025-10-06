@@ -10,7 +10,6 @@ BOLD="\033[1m"
 while true; do
   clear
   echo -e "${BOLD}=== Disclaimer: Temperatures shown are software-reported & approximated ===${RESET}\n"
-  echo
 
   for z in /sys/class/thermal/thermal_zone*; do
     t=$(cat "$z/type")
